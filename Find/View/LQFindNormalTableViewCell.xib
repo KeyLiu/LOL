@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="normal" rowHeight="82" id="KGk-i7-Jjw" customClass="LQFindNormalTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top_page_view_default.png" translatesAutoresizingMaskIntoConstraints="NO" id="zDj-aL-3xc">
+                        <rect key="frame" x="10" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="R6R-Iz-u56"/>
+                            <constraint firstAttribute="width" constant="80" id="ibs-dw-Zkc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="奶茶MM挺孕肚拍写真" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qy-Mp-vTE">
+                        <rect key="frame" x="95" y="10" width="235" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Bpy-te-pGv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="233333333333333333" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sf-Gd-iaj">
+                        <rect key="frame" x="95" y="41" width="270" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="3sf-Gd-iaj" secondAttribute="trailing" constant="10" id="6DV-cS-8Vv"/>
+                    <constraint firstItem="3sf-Gd-iaj" firstAttribute="leading" secondItem="zDj-aL-3xc" secondAttribute="trailing" constant="5" id="CYS-a3-1wI"/>
+                    <constraint firstItem="3sf-Gd-iaj" firstAttribute="top" secondItem="6Qy-Mp-vTE" secondAttribute="bottom" constant="10" id="CaK-sL-0yI"/>
+                    <constraint firstItem="zDj-aL-3xc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="NEh-2a-yPs"/>
+                    <constraint firstAttribute="trailing" secondItem="6Qy-Mp-vTE" secondAttribute="trailing" constant="45" id="OwG-0H-sAl"/>
+                    <constraint firstItem="zDj-aL-3xc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="QUh-78-hRP"/>
+                    <constraint firstItem="6Qy-Mp-vTE" firstAttribute="leading" secondItem="zDj-aL-3xc" secondAttribute="trailing" constant="5" id="alL-gn-4Xy"/>
+                    <constraint firstItem="6Qy-Mp-vTE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="bI6-MM-ieO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="zDj-aL-3xc" id="xze-RN-LRg"/>
+                <outlet property="infoLabel" destination="3sf-Gd-iaj" id="b4A-2J-O6L"/>
+                <outlet property="newslabel" destination="6Qy-Mp-vTE" id="AuZ-p0-lDD"/>
+            </connections>
+            <point key="canvasLocation" x="302.5" y="416"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="top_page_view_default.png" width="103" height="64"/>
+    </resources>
+</document>

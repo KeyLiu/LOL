@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="pic" rowHeight="150" id="KGk-i7-Jjw" customClass="LQFindPicTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北影复试现场美女帅哥云集" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZy-Fz-y11">
+                        <rect key="frame" x="10" y="10" width="355" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="U0a-es-FiO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YbL-3s-gMU">
+                        <rect key="frame" x="10" y="36" width="355" height="108"/>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RZy-Fz-y11" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="0wE-DK-liR"/>
+                    <constraint firstAttribute="trailing" secondItem="RZy-Fz-y11" secondAttribute="trailing" constant="10" id="ETI-7c-Ohf"/>
+                    <constraint firstItem="RZy-Fz-y11" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Jem-iX-r4u"/>
+                    <constraint firstAttribute="bottom" secondItem="YbL-3s-gMU" secondAttribute="bottom" constant="5" id="Ma1-ou-iHJ"/>
+                    <constraint firstItem="YbL-3s-gMU" firstAttribute="top" secondItem="RZy-Fz-y11" secondAttribute="bottom" constant="5" id="hDE-j1-fer"/>
+                    <constraint firstItem="YbL-3s-gMU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="lPt-cY-5No"/>
+                    <constraint firstAttribute="trailing" secondItem="YbL-3s-gMU" secondAttribute="trailing" constant="10" id="uqB-kM-lPh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mainScrollView" destination="YbL-3s-gMU" id="deF-Az-oAc"/>
+                <outlet property="newsLabel" destination="RZy-Fz-y11" id="ooJ-Ad-uiP"/>
+            </connections>
+            <point key="canvasLocation" x="277.5" y="450"/>
+        </tableViewCell>
+    </objects>
+</document>
